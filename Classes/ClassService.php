@@ -4,8 +4,8 @@
 namespace TheWorldsCMS\Journey;
 
 use Composer\Autoload\ClassLoader;
-use TheWorldsCMS\Packages\Journey\Classes\Annotations as Journey;
-use TheWorldsCMS\Packages\Journey\Classes\Exceptions\ClassNotFoundException;
+use TheWorldsCMS\Journey\Annotations as Journey;
+use TheWorldsCMS\Journey\Exceptions\ClassNotFoundException;
 
 /**
  * Class ClassService
