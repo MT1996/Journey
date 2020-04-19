@@ -1,7 +1,7 @@
 {
     "name": "theworldscms/journey",
     "description": "Journey Framework, which will be the underlying system to develop the headless cms TheWorldsCMS way more easy.",
-    "type": "framework",
+    "type": "theworldscms-framework",
     "license": "MIT",
     "authors": [
         {
@@ -9,10 +9,20 @@
             "email": "Marc.Totzke@t-online.de"
         }
     ],
-    "require": {},
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require": {
+        "theworldscms/composer-plugin": "dev-master"
+    },
+    "require-dev": {
+        "composer/composer": "^1.9.0"
+    },
     "autoload": {
         "psr-4": {
             "TheWorldsCMS\\Journey\\": "Classes"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

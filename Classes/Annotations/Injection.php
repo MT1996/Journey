@@ -1,10 +1,9 @@
 <?php
-namespace TheWorldsCMS\Packages\Journey\Classes\Annotations;
+namespace TheWorldsCMS\Journey\Annotations;
 
 use ReflectionClass;
 use ReflectionException;
 use TheWorldsCMS\Journey\AnnotationEngine\Model\AnnotationProperty;
-use TheWorldsCMS\Journey\Annotations\AbstractAnnotation;
 
 /**
  * Class Injection
