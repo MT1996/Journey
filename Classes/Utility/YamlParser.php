@@ -6,7 +6,7 @@
  * Time: 20:48
  */
 
-namespace TheWorldsCMS\Utility;
+namespace TheWorldsCMS\Journey\Utility;
 
 use Symfony\Component\Yaml\Yaml;
 

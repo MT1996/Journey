@@ -6,7 +6,11 @@
  * Time: 20:54
  */
 
-namespace TheWorldsCMS\Utility;
+namespace TheWorldsCMS\Journey\Utility;
+
+function debug($someVariable) {
+    echo '<pre>' , var_dump($someVariable) , '</pre><br>';
+}
 
 define("CONTROLLER_PATH", $_SERVER['DOCUMENT_ROOT'] . "/Classes/");
 define("MODEL_PATH", $_SERVER['DOCUMENT_ROOT'] . "/Model/");
@@ -23,8 +27,4 @@ class Utility {
     public static function debug($someVariable) {
         echo '<pre>' , var_dump($someVariable) , '</pre><br>';
     }
-}
-
-function debug($someVariable) {
-    echo '<pre>' , var_dump($someVariable) , '</pre><br>';
 }
