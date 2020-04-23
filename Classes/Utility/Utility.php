@@ -24,3 +24,7 @@ class Utility {
         echo '<pre>' , var_dump($someVariable) , '</pre><br>';
     }
 }
+
+function debug($someVariable) {
+    echo '<pre>' , var_dump($someVariable) , '</pre><br>';
+}
