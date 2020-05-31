@@ -1,6 +1,6 @@
 <?php
 
-namespace TheWorldsCMS\Journey\Packages;
+namespace TheWorldsCMS\Journey\Package;
 
 use TheWorldsCMS\Journey\Annotations as Journey;
 use TheWorldsCMS\Journey\Filesystem\FilesystemManager;
