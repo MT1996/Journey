@@ -1490,19 +1490,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MT1996/composer-plugin.git",
-                "reference": "335762f2d7099f541e4f6341065b2ba9eaec2f28"
+                "reference": "32f9ae80e34806f7f3abbf8d064e9b9fa4a4d1b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MT1996/composer-plugin/zipball/335762f2d7099f541e4f6341065b2ba9eaec2f28",
-                "reference": "335762f2d7099f541e4f6341065b2ba9eaec2f28",
+                "url": "https://api.github.com/repos/MT1996/composer-plugin/zipball/32f9ae80e34806f7f3abbf8d064e9b9fa4a4d1b7",
+                "reference": "32f9ae80e34806f7f3abbf8d064e9b9fa4a4d1b7",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1"
-            },
-            "require-dev": {
-                "composer/composer": "^1.10.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1524,7 +1521,7 @@
                 }
             ],
             "description": "Custom Composer Class for Installation of Packages",
-            "time": "2020-04-23T19:34:38+00:00"
+            "time": "2020-05-31T07:27:29+00:00"
         }
     ],
     "packages-dev": [],

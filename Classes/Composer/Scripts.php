@@ -3,17 +3,17 @@
 namespace TheWorldsCMS\Journey\Composer;
 
 use Composer\Installer\PackageEvent;
-use function TheWorldsCMS\Journey\Utility\debug;
+use TheWorldsCMS\Journey\Utility\Utility;
 
 class Scripts {
     public static function postUpdateAndInstallCommand(PackageEvent $event) {
-        debug("------------------------------------------------------------------");
-        debug($event->getName());
-        debug("------------------------------------------------------------------");
+        Utility::debug("------------------------------------------------------------------");
+        Utility::debug($event->getName());
+        Utility::debug("------------------------------------------------------------------");
     }
     public static function postUpdateAndInstallPackage(PackageEvent $event) {
-        debug("------------------------------------------------------------------");
-        debug($event->getName());
-        debug("------------------------------------------------------------------");
+        Utility::debug("------------------------------------------------------------------");
+        Utility::debug($event->getName());
+        Utility::debug("------------------------------------------------------------------");
     }
 }
