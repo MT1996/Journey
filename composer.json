@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TheWorldsCMS\\Journey\\": "./"
+            "TheWorldsCMS\\Journey\\": "./Classes"
         }
     },
     "minimum-stability": "dev",
