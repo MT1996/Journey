@@ -8,10 +8,6 @@
 
 namespace TheWorldsCMS\Journey\Utility;
 
-function debug($someVariable) {
-    echo '<pre>' , var_dump($someVariable) , '</pre><br>';
-}
-
 define("CONTROLLER_PATH", $_SERVER['DOCUMENT_ROOT'] . "/Classes/");
 define("MODEL_PATH", $_SERVER['DOCUMENT_ROOT'] . "/Model/");
 define("RESOURCES_PATH", $_SERVER['DOCUMENT_ROOT'] . "/Resources/");
