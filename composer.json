@@ -14,11 +14,11 @@
     },
     "require": {
         "theworldscms/composer-plugin": "dev-master",
-        "composer/composer": "1.10.6"
+        "composer/composer": "^1.10.6"
     },
     "autoload": {
         "psr-4": {
-            "TheWorldsCMS\\Journey\\": "./Classes"
+            "TheWorldsCMS\\Journey\\": "./Classes/"
         }
     },
     "minimum-stability": "dev",
