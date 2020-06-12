@@ -1,8 +1,9 @@
 <?php
 namespace TheWorldsCMS\Journey\AnnotationEngine;
 
+use TheWorldsCMS\Journey\AnnotationEngine\Model\Annotation;
 use TheWorldsCMS\Journey\AnnotationEngine\Model\AnnotationInformation;
-use TheWorldsCMS\Packages\Journey\Classes\Annotations as Journey;
+use TheWorldsCMS\Journey\AnnotationEngine\Model\AnnotationMetaData;
 use TheWorldsCMS\Journey\ClassService;
 
 class AnnotationManager {

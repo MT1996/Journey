@@ -5,6 +5,7 @@ use Composer\Autoload\ClassLoader;
 use TheWorldsCMS\Journey\AnnotationEngine\AnnotationManager;
 use TheWorldsCMS\Journey\AnnotationEngine\AnnotationService;
 use TheWorldsCMS\Journey\ClassService;
+use TheWorldsCMS\Journey\Filesystem\FilesystemManager;
 
 /**
  * Class Bootstrap
@@ -37,6 +38,15 @@ class Bootstrap {
      */
     public function run() {
         $this->prepareBeforeActualRunning();
+        /** @var FilesystemManager $controller1 */
+        $controller1 = FilesystemManager::getInstance();
+        /** @var FilesystemManager $controller2 */
+        $controller2 = FilesystemManager::getInstance();
+        if ($controller1 === $controller2) {
+            echo "getInstance() funktioniert mit Singleton Pattern...";
+        } else {
+            var_dump($controller1, $controller2);
+        }
     }
 
     /**

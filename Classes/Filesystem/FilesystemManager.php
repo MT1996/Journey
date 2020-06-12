@@ -1,16 +1,18 @@
 <?php
 
 
-namespace TheWorldsCMS\Journey\Filesystem;
 
+namespace TheWorldsCMS\Journey\Filesystem;
+require("./Packages/Application/TheWorldsCMS/Classes/Controller/Abstracts/AbstractController.php");
 use TheWorldsCMS\Journey\Annotations as Journey;
+use TheWorldsCMS\Packages\Backend\Classes\Controller\Abstracts\AbstractController;
 
 /**
  * Class FilesystemManager
  * @package TheWorldsCMS\Journey\FilesystemManagement
  * @Journey\Singleton()
  */
-class FilesystemManager implements Filesystem {
+class FilesystemManager extends AbstractController implements Filesystem {
     /**
      * @var string
      */
@@ -28,6 +30,7 @@ class FilesystemManager implements Filesystem {
      */
     public function createDirectories($directories) {
         // TODO: Implement createDirectories() method.
+
     }
 
     /**
