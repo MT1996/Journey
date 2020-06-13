@@ -25,7 +25,7 @@
     "prefer-stable": true,
     "extra": {
         "theWorldsCMS": {
-            "packageInstallName": "TheWorldsCMS.Journey"
+            "packageInstallPath": "TheWorldsCMS.Journey"
         }
     }
 }
