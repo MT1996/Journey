@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1d34108587a7e2af6065717c78eb2c1",
+    "content-hash": "d5b2ebbf5350ced0744c5cbfb649be2e",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -411,6 +411,52 @@
                 "schema"
             ],
             "time": "2020-05-27T16:41:55+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/container",
@@ -1502,12 +1548,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MT1996/composer-plugin.git",
-                "reference": "c4114d43667b334078b15b09d0d2053bd111eae6"
+                "reference": "c5a68e540a4ce294d757018994d02c90866bb178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MT1996/composer-plugin/zipball/c4114d43667b334078b15b09d0d2053bd111eae6",
-                "reference": "c4114d43667b334078b15b09d0d2053bd111eae6",
+                "url": "https://api.github.com/repos/MT1996/composer-plugin/zipball/c5a68e540a4ce294d757018994d02c90866bb178",
+                "reference": "c5a68e540a4ce294d757018994d02c90866bb178",
                 "shasum": ""
             },
             "require": {
@@ -1536,7 +1582,7 @@
                 }
             ],
             "description": "Custom Composer Class for Installation of Packages",
-            "time": "2020-06-13T10:08:24+00:00"
+            "time": "2020-06-13T10:59:36+00:00"
         }
     ],
     "packages-dev": [],
