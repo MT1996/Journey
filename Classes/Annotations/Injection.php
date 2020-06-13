@@ -19,21 +19,16 @@ class Injection extends AbstractAnnotation {
         /** @var AnnotationProperty $annotationProperty */
         $annotationProperty = $paramters["annotationProperties"][0];
         $propertyName = $paramters["propertyName"];
+
         $ClassStringThatWillBeInjected = $annotationProperty->getAnnotationPropertyValue();
-        $instanceThatWillBeInjected = null;
         $reflectedClassStringClass = new ReflectionClass($ClassStringThatWillBeInjected);
-        If (Injection::reflectedClassIsInstantiable($reflectedClassStringClass)) {
-            $instanceThatWillBeInjected = new $ClassStringThatWillBeInjected();
-        } else {
-            $instanceThatWillBeInjected = $ClassStringThatWillBeInjected::getInstance();
-        }
+
+        $instanceThatWillBeInjected = (Injection::reflectedClassIsInstantiable($reflectedClassStringClass) ? new $ClassStringThatWillBeInjected() : $ClassStringThatWillBeInjected::getInstance());
+
         $reflectedTargetClass = new ReflectionClass($targetClass);
-        $targetClassInstance = null;
-        if (Injection::reflectedClassIsInstantiable($reflectedTargetClass)) {
-            $targetClassInstance = new $targetClass();
-        } else {
-            $targetClassInstance = $targetClass::getInstance();
-        }
+
+        $targetClassInstance = (Injection::reflectedClassIsInstantiable($reflectedTargetClass) ? new $targetClass() : $targetClass::getInstance());
+
         $reflectedProperty = $reflectedTargetClass->getProperty($propertyName);
         $reflectedProperty->setAccessible(true);
         $reflectedProperty->setValue($targetClassInstance, $instanceThatWillBeInjected);
